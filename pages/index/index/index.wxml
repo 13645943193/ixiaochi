@@ -1,0 +1,30 @@
+<home wx:if="{{PageCur=='home'}}"></home>
+<sort wx:if="{{PageCur=='sort'}}"></sort>
+<share wx:if="{{PageCur=='share'}}"></share>
+<user wx:if="{{PageCur=='user'}}"></user>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="home">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/home{{PageCur=='home'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='home'?'text-green':'text-gray'}}">首页</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="sort">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/sort{{PageCur=='sort'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='sort'?'text-green':'text-gray'}}">分类</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="share">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/share{{PageCur=='share'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='share'?'text-green':'text-gray'}}">共享</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="user">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/user{{PageCur=='user'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='user'?'text-green':'text-gray'}}">我的</view>
+  </view>
+</view>

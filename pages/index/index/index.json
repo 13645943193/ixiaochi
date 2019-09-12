@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "home": "/pages/home/index/index",
+    "sort": "/pages/sort/index/index",
+    "share": "/pages/share/index/index",
+    "user": "/pages/user/index/index"
+  }
+}
